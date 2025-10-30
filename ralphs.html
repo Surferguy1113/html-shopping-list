@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>ralphs List</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleStrike(checkbox) {
+    const label = checkbox.nextElementSibling;
+    label.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
+}
+  </script>
+  <style>
+    .container{
+      position: relative;
+      right:50px;
+    }
+  </style>
+</head>
+<body>
+
+    <h1><em><img src="./assets/Images/Shopping Cart.png" height="70"><a href="./index.html" style="text-decoration: none;">SHOPPING LIST</em></h1></a>
+  <div class="container">
+    <div class="list-1">
+      <ol>
+        <button><label for="B"><a href="https://www.ralphs.com/"
+          style="text-decoration: none;font-size: large">Ralph's</a></label></button>
+          <br>
+        <li><strong>DAIRY</strong>
+          <ul>
+            <li class="priority"><input type="checkbox" id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Just Eggs</li></label>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Mexican Cheese</li></label>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Pepper Jack Cheese</li></label>
+          </ul>
+        </li>
+        <li><strong>BAKERY</strong>
+          <ul>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Sourdough</li></label>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">French Bread</li></label>
+          </ul>
+        </li>
+        <li><strong>FROZEN FOODS</strong>
+          <ul>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Frozen Yellow Corn</li></label>
+          </ul>
+        </li>
+        <li><strong>VEGETABLES</strong>
+          <ul>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Organic Cherry Tomatoes</li></label>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Celery</li></label>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Cucumber</li></label>
+          </ul>
+        </li>
+        <li><strong>BEVERAGES</strong>
+          <ul>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Orange Juice</li></label>
+          </ul>
+        </li>
+        <li><strong>CANNED GOODS</strong>
+          <ul>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Canned Black Beans</li></label>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Stewed Tomatoes</li></label>
+          </ul>
+        </li>
+        <li><strong>CLEANING</strong>
+          <ul>
+            <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Comet</li></label>
+          </ul>
+        </li>
+        <li class="priority"><strong>MISC.</strong>
+          <ul>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Chips</li></label>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Candy</li></label>
+            <li class="priority"><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Cookies</li></label>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    
+</body>
+</html>

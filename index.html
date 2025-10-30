@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping List</title>
+
+  <style>
+body {
+  background: url("./assets/Images/Shopping image.jpg") center/cover no-repeat;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3); /* white with 40% opacity */
+  z-index: -1; /* keep overlay behind content */
+}
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      background-color: rgba(255, 255, 255, 0.7);;
+      padding: 10px;
+      color: black;
+      padding: 50px;
+      margin-top: 0px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.9);;
+      padding: 1px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      margin-top: -48px;
+
+    }
+
+    /* optional: give the button container a backdrop for readability */
+    .container button {
+      margin: 15px 0;
+      width: 200px;
+      border:1px solid;
+      margin-right: 182px;
+    }
+    img{
+      margin-bottom: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <em>
+      <img src="./assets/Images/Shopping Cart.png" height="70" alt="Shopping Cart">
+      SHOPPING LIST
+    </em>
+  </h1>
+
+  <div class="container">
+    <button>
+      <a href="./ralphs.html" style="text-decoration: none; font-size: large; color: black;">Ralph's</a>
+    </button>
+
+    <button>
+      <a href="./traderjoes.html" style="text-decoration: none; font-size: large; color: black;">Trader Joe's</a>
+    </button>
+
+    <button>
+      <a href="./costco.html" style="text-decoration: none; font-size: large; color: black;">Costco</a>
+    </button>
+  </div>
+
+  <footer></footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

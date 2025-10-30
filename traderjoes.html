@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>trader joes</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleStrike(checkbox) {
+    const label = checkbox.nextElementSibling;
+    label.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
+}
+  </script>
+  <style>
+    .container{
+      position: relative;
+      right:70px;
+      
+    }
+  </style>
+</head>
+<body>
+
+    <h1><em><img src="./assets/Images/Shopping Cart.png" height="70"><a href="./index.html" style="text-decoration: none;">SHOPPING LIST</em></h1></a>
+<div class="container">
+    <div class="list-2">  
+        <ol>
+          <button><label for="A"><a href="https://www.traderjoes.com/home" style="text-decoration: none; font-size: large">Trader Joe's</a></label></button>
+            <br>
+          <li><strong>DAIRY</strong>
+            <ul>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Cinnamon Oat Milk</li></label>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Vegan Butter</li></label>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Coconut Milk</li></label>
+            </ul>
+          </li>
+          <li><strong>BAKERY</strong>
+            <ul>
+              <li><input type="checkbox" id="A" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">French Bread</li></label>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Tortillas</li></label>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Flat Bread</li></label>
+            </ul>
+          </li>
+          <li><strong>FROZEN FOODS</strong>
+            <ul>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Green Beans</li></label>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Organic Yellow Corn</li></label>
+            </ul>
+          </li>
+          <li><strong>VEGETABLES</strong>
+            <ul>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Organic Cherry Tomatoes</li></label>
+            </ul>
+          </li>
+          <li><strong>BEVERAGES</strong>
+            <ul>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Soda Water</li></label>
+            </ul>
+          </li>
+          <li><strong>CANNED GOODS</strong>
+            <ul>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Canned Black Beans</li></label>
+            </ul>
+          </li>
+          <li><strong>FRUITS</strong>
+            <ul>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Apples/Bananas</li></label>
+            </ul>
+          </li>
+          <li class="priority"><strong>COOKING</strong>
+            <ul>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Vegetable Broth</li></label>
+              <li class="priority"><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Marinera Suace</li></label>
+              <li><input type="checkbox" checked id="item-checkbox" checked onclick="toggleStrike(this)"><label for="task1">Taco Seasoning</li></label>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>  
+</body>
+</html>
